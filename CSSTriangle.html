@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Triangle</title>
+    <style>
+
+      #one {
+        /*
+        background: orange;
+        width: 0px;
+        height: 0px;
+        border-width: 50px;
+        border-style: solid;
+        border-color: deepskyblue dodgerblue darkslateblue  cornflowerblue;
+        */
+        background: transparent;
+        width: 0px;
+        height: 0px;
+        border-width: 100px 50px 0 50px;
+        border-style: solid;
+        border-color: deepskyblue transparent transparent transparent;
+        filter: drop-shadow(0 0 1em darkcyan);
+        /*
+            box-shadow: 0 0 1em black;
+
+
+            em = bezieht sich auf den Buchstaben M der aktuellen Font Size
+                 verwendet man immer dann, wenn man etwas macht, das relativ
+                 auf der aktuellen Font Grösse sein muss.
+
+            rem = em des Root Elements
+
+            Beispielsweise dann wenn Text in einer Tabelle verwendet wird,
+            der Text soll mindestens 1 em Abstand zum Border haben. Sonst
+            stört es das Auge beim Lesen und ist nicht attraktiv.
+
+            Unterschiedliche Schriftgrössen mit vorsicht genissen.
+            Wenn z.B ein Aufklappdreicek erstellt wird oben rechts im Menü, dann kann EM verwendet werden.
+            Wenn eine Tabelle verwendet wird die unterschiedliche Font Sizes dann eher REM
+
+        */
+
+      }
+
+      #two {
+        background: orangered;
+        width: 100px;
+        height: 100px;
+        clip-path: polygon(0 0, 100% 50%, 0 100%);
+        box-shadow: inset 0 0 3em black;
+        /*
+            ähnlich wie SVG - für SVG müsste das HTML verändert werden
+            IMG muss ein skalierendes Bild verwendet werden
+         */
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="one"></div>
+    <div id="two"></div>
+
+  </body>
+</html>
