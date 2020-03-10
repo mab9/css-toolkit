@@ -5,6 +5,9 @@
     <title>Title</title>
     <style>
 
+        /*
+            Vorteil kein JS wird benötigt (wenn JS ausgeschaltet ist), schneller und weitere Gründe
+         */
         body {
             margin: 2em;
 
@@ -22,7 +25,7 @@
         }
 
         /* collapsed div todo: change css selector*/
-        div  {
+        input[type=checkbox].hidden:checked + label.toggle + div.collapsible {
             max-height: 0;
             transition:  max-height 0.5s ease-out;
         }
@@ -39,6 +42,14 @@
             : pseudeo Klassen nur mit einem.
 
         */
+
+        /*
+            Hier wird das Dreieck gezeichnet
+            Durch + label wird genau das folgende Element von input checkbox selektiert.
+
+            before ist das Pseudoelement, dass hinzugefügt wird um das Label anzuzeigen.
+            Im Dom kann mit CSS kein neues Element hinzugefügt werden. Deshalb Pseudo.
+        */
         input[type=checkbox].hidden + label.toggle:before {
             content:    '';
             display:    inline-block;
@@ -54,6 +65,10 @@
         }
 
         /* todo rotate arrow on collapse */
+        input[type=checkbox].hidden:checked + label.toggle:before {
+            transform: rotate(-90deg);
+            transition: transform 0.5s;
+        }
 
     </style>
 </head>
