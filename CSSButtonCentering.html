@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        :root {  /* pseudo clasls, das oberhalb des <html> Element ist */
+            margin:     0;
+            padding:    0;
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", "sans-serif";
+        }
+
+        main {
+            /* zentrierein in der Mitte vertikal und horizontal  */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh; /* viewport height = der Ausschnitt den man sieht */
+            align-items: center;
+        }
+
+        .rainbow {
+            /*display: inline-block;*/
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: #9ae69c88;
+            padding: 1em;
+            border-radius: 2em;
+            position: relative;  /* das child element unten, kann sich gegenüber dem positionieren*/
+        }
+
+        /* make a rainbow-colored shadow by blurring a positioned background */
+        .rainbow::before {
+            content: ""; /* ohne content, wird das pseude Element nicht angezeigt */
+            /*background: red;*/
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, violet);
+            position: absolute;
+            top:    -5px;
+            bottom: -5px;
+            left:   -5px;
+            right:  -5px;
+            z-index: -1;  /* z indices funktionieren auf pseudo Elemente nur mit negativen Zahlen */
+            border-radius:  2em;
+            filter: blur(1em);
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<main>
+    <div>
+        <a class="rainbow" href="#">Button</a>
+    </div>
+</main>
+
+
+
+</body>
+
+</html>
