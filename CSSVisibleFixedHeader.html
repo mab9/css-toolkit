@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Goodie</title>
+  <style>
+      body {
+          margin: 4rem;
+          box-sizing: border-box;
+      }
+
+      thead tr {
+          position: sticky;
+          /*
+            zusätzlich muss angegeben werden, wo sie angeklebt werden soll
+            mit sticky bleibt man an der stelle hängen, solange bis jemand anders kommt.
+            siehe zweite tabelle. Dieser effekt wäre mit position absolut nicht vorhanden.
+           */
+          top: 0;
+          /*
+            für das besseres styling wäre hier ein opaquer hintergrund von vorteil.
+           */
+      }
+  </style>
+</head>
+
+<body>
+
+<h1>Goodie</h1>
+
+<main>
+    <table>
+        <thead>
+            <tr>
+                <th>One</th><th>Two</th><th>Three</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>One</th><th>Two</th><th>Three</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        </tbody>
+    </table>
+</main>
+
+</body>
+</html>
