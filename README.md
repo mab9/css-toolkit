@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/mab9/css-toolkit?style=social)
 <!--![Twitter Follow](https://img.shields.io/twitter/follow/mab9?style=social)-->
 
-CSS toolkit with tipps and tricks. 
+CSS toolkit with tips and tricks. 
 
 The toolkit offers CSS examples who helps to style web pages and develop good user experiences. Checkout the CSS spotlight, one of my favorite CSS tricks.
 
